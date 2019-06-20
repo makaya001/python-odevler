@@ -1,0 +1,14 @@
+gelir=float(input('Lutfen aylik gelirinizi yaziniz\t\t   :'))
+mtfk=float(input('Lutfen aylik mutfak harcamalarinizi yaziniz:'))
+egitim=float(input('Lutfen aylik egitim harcamalarinizi yaziniz:'))
+giyim=float(input('Lutfen aylik giyim harcamalarinizi yaziniz :'))
+ulasm=float(input('Lutfen aylik ulasim harcamalarinizi yaziniz:'))
+aylkmasraf=mtfk+egitim+giyim+ulasm
+aylikoran=aylkmasraf/gelir
+dosya=open('Aylikmasraf.txt','w')
+import sys
+sys.stdout=dosya
+
+print('Aylik masrafiniz',aylkmasraf,'€\'dir')
+print('Aylik masraflarinizin gelirinizden',aylikoran,'kat dusuktur')
+
