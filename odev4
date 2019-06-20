@@ -1,0 +1,14 @@
+anapara=float(input('Anapara Euro cinsinden hesaplanacaktir\n\
+Lutfen ana para miktarini girin\t:'))
+faizsuresi=float(input('#faiz suresi yil olarak yazilmaidir\n\
+Lutfen faiz suresini giriniz\t:'))
+faizorani=float(input('Lutfen faiz oranini giriniz\t:'))
+faizyillik=(anapara*faizsuresi*faizorani)/100
+aylikfaiz=faizyillik/12
+gunlukfaiz=faizyillik/365
+dosya=open('FaizHesaplama.txt','w')
+import sys
+sys.stdout=dosya
+print('Yillik faiz oraniniz :',faizyillik,'€ olarak hesaplanmistir.')
+print('Aylik faiz oraniniz  :',aylikfaiz,'€ olarak hesaplanmistir.')
+print('Gunluk faiz oraniniz:',gunlukfaiz,'€ olarak hesaplanmistir.')
