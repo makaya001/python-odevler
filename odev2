@@ -1,0 +1,4 @@
+km=float(input('Lutfen donusturmek istediginiz km\' yi yaziniz :'))
+mil=km*0.621371192
+print("Hesaplama islemi basatriyla tamamlandi sonuc: "\
+       ,mil,"mil")
