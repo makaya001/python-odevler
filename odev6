@@ -1,0 +1,11 @@
+print("""Python'un kurucusu Guido van Rossum,
+Hollanda'nin Amsterdam'daki"Üniversiteit Van
+Amsterdam" okulundan 1982' de mezun olmustur.""", "\n")
+
+print("Python'un kurucusu Guido van Rossum,\
+\n Hollanda'nin Amsterdam'daki \"Universiteit Van\
+Amsterdam\"\n okulundan 1982'de mezun olmustur.","\n")
+
+print("Python'un kurucusu Guido van Rossum,",
+  " Hollanda'nin Amsterdam'daki 'Universiteit Van\
+Amsterdam"," okulundan 1982'de mezun olmustur.",sep="\n")
