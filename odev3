@@ -1,0 +1,12 @@
+dosya=open('OgrenciNotHesaplama.txt','w')
+isim=input("Lutfen isminizi giriniz\t\t\t :")
+soyad=input('Lutfen soyadinizi yaziniz\t\t :')
+vize=float(input('Lutfen vize puaninizi yaziniz \t\t :'))
+final=float(input('Lutfen final programinizi yaziniz \t :'))
+ders=int(input('Lutfen girmediginiz ders sayisini yaziniz:'))
+vizenotu=vize*0.3
+finalnotu=final*0.5
+derstakip=(100-(ders*5))*0.2
+print("Sayin",isim,soyad,'Yil sonu not ortalamaniz :'\
+      ,vizenotu+finalnotu+derstakip,file=dosya)
+dosya.close
